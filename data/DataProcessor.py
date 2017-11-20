@@ -5,8 +5,8 @@ class DataProcessor:
         self.labels = list()
         self.sentences = list()
         self.features = list()
-        self.readSentences('data/negativeSentences.txt', 'negative')
-        self.readSentences('data/positiveSentences.txt', 'positive')
+        self.readSentences('data/negativeSentences.txt', 0)
+        self.readSentences('data/positiveSentences.txt', 1)
         self.getFeatures()
 
     def readSentences(self, dataFile, label):
